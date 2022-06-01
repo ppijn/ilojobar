@@ -5,6 +5,13 @@
 
 :root {
   --beige: #c0bb87;
+  --brown: #433222;
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url("/ilojobar/css/BalooBhai-Regular.ttf");
+  font-display: swap;
 }
 
 body {
@@ -16,9 +23,10 @@ main {
 }
 
 h1 {
-  font-family: "baloo-bhai-regular", sans-serif;
+  font-family: "Baloo", sans-serif;
+  color: var(--brown);
   text-align: center;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 .bar-area {
