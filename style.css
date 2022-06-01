@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --beige: #c0bb87;
+}
+
+body {
+  background-color: var(--beige);
+}
+
+main {
+  position: relative;
+}
+
+h1 {
+  font-family: "baloo-bhai-regular", sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+.bar-area {
+  display: flex;
+  place-content: center;
+  /* align-items: center; */
+}
+
+.bar,
+.lamps,
+.bubble,
+.stools,
+.man {
+  position: absolute;
+}
+
+.lamps {
+  top: 20vh;
+  margin-bottom: 100px;
+  /* width: 50vw; */
+}
+
+.bubble {
+  top: 38vh;
+  left: 42vw;
+}
+.man {
+  top: 43vh;
+  /* width: 25%; */
+}
+.bar {
+  top: 55vh;
+  /* width: 45vw; */
+}
+.stools {
+  top: 68vh;
+  /* width: 38vw; */
+}
