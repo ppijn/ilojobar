@@ -6,17 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ilojo Bar</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <main>
       <h1>ILOJO BAR</h1>
       <section class="bar-area">
-        <img src="img/lamps.svg" alt="Lamps on top of the bar" class="lamps" />
-        <img src="img/Union.svg" alt="text bubble" class="bubble" />
-        <img src="img/barman.svg" alt="Barman" class="man" />
-        <img src="img/bar.svg" alt="Bar with drinks" class="bar" />
-        <img src="img/stools.svg" alt="Stools to sit on" class="stools" />
+        <div id="scene">
+          <div data-depth="-0.25">
+            <img
+              src="img/lamps.svg"
+              alt="Lamps on top of the bar"
+              class="lamps"
+            />
+          </div>
+          <div data-depth="-0.12">
+            <img src="img/Union.svg" alt="text bubble" class="bubble" />
+          </div>
+          <div data-depth="-0.1">
+            <img src="img/barman.svg" alt="Barman" class="man" />
+          </div>
+          <div data-depth="0.15">
+            <img src="img/bar.svg" alt="Bar with drinks" class="bar" />
+          </div>
+          <div data-depth="0.25">
+            <img src="img/stools.svg" alt="Stools to sit on" class="stools" />
+          </div>
+        </div>
       </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   </body>
 </html>

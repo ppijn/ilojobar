@@ -16,10 +16,7 @@
 
 body {
   background-color: var(--beige);
-}
-
-main {
-  position: relative;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -27,12 +24,6 @@ h1 {
   color: var(--brown);
   text-align: center;
   font-size: 80px;
-}
-
-.bar-area {
-  display: flex;
-  place-content: center;
-  /* align-items: center; */
 }
 
 .bar,
@@ -44,24 +35,29 @@ h1 {
 }
 
 .lamps {
-  top: 20vh;
+  top: 0;
+  left: 28vw;
+
   margin-bottom: 100px;
   /* width: 50vw; */
 }
 
 .bubble {
-  top: 38vh;
-  left: 42vw;
+  top: 25vh;
+  left: 40vw;
 }
 .man {
-  top: 43vh;
-  /* width: 25%; */
+  top: 30vh;
+  left: 42vw;
 }
 .bar {
-  top: 55vh;
-  /* width: 45vw; */
+  top: 42vh;
+  left: 28vw;
+  /* width: 43vw; */
 }
 .stools {
-  top: 68vh;
-  /* width: 38vw; */
+  top: 55vh;
+  left: 31vw;
+
+  /* width: 35vw; */
 }
