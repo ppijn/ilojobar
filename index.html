@@ -8,33 +8,21 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="home-page">
     <main>
       <h1>ILOJO BAR</h1>
-      <section class="bar-area">
-        <div id="scene">
-          <div data-depth="-0.25">
-            <img
-              src="img/lamps.svg"
-              alt="Lamps on top of the bar"
-              class="lamps"
-            />
-          </div>
-          <div data-depth="-0.12">
-            <img src="img/Union.svg" alt="text bubble" class="bubble" />
-          </div>
-          <div data-depth="-0.1">
-            <img src="img/barman.svg" alt="Barman" class="man" />
-          </div>
-          <div data-depth="0.15">
-            <img src="img/bar.svg" alt="Bar with drinks" class="bar" />
-          </div>
-          <div data-depth="0.25">
-            <img src="img/stools.svg" alt="Stools to sit on" class="stools" />
-          </div>
-        </div>
-      </section>
+      <a href="bar.html">
+        <img
+          src="img/ilojobarfallback.png"
+          alt="Fallback for the Ilojo Bar"
+          class="ilojo"
+        />
+      </a>
+      <h2>Switch to view in 3D</h2>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   </body>
 </html>
