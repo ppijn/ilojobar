@@ -7,7 +7,6 @@ let scene, camera, renderer, controls, loader;
 function init() {
     // Scene
     scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xc0bb87);
 
     // Camera
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -15,13 +14,14 @@ function init() {
 
     // Render
     renderer = new THREE.WebGLRenderer({
+        alpha: true,
         antialias: true
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.toneMapping = THREE.LinearToneMapping;
     renderer.toneMappingExposure = 1.5;
     renderer.shadowMap.enabled = true;
-    document.body.appendChild(renderer.domElement);
+    document.querySelector('.three-module').appendChild(renderer.domElement);
 
     // Lighting
     const hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 0.8)
@@ -42,7 +42,7 @@ function init() {
     // Loader
     loader = new FBXLoader();
 
-    loader.load('/3d/build.fbx', object => {
+    loader.load('/3d/ilojobar.fbx', object => {
         object.traverse(function (child) {
             if (child.isMesh) {
                 child.castShadow = true;

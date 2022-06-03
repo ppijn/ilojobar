@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Baloo";
-  src: url("/ilojobar/css/BalooBhai-Regular.ttf");
+  src: url("css/BalooBhai-Regular.ttf");
   font-display: swap;
 }
 
@@ -19,12 +19,18 @@ body {
   overflow-x: hidden;
 }
 
+.three-module {
+  margin-top: -10rem;
+  display: none;
+}
+
 /* Home Page */
 
 .ilojo {
-  width: 95vw;
+  width: 60vw;
   display: block;
   margin: 0 auto;
+  margin-bottom: 2rem;
   /* justify-content: center; */
 }
 
@@ -34,6 +40,7 @@ h2 {
   color: var(--brown);
   text-align: center;
 }
+
 
 /* Toggle switch */
 
@@ -114,6 +121,7 @@ h1 {
   color: var(--brown);
   text-align: center;
   font-size: 80px;
+  z-index: 999 !important;
 }
 
 .back img {
