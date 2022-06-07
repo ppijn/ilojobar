@@ -1,4 +1,4 @@
-if(window.location.href.indexOf('bar') > -1) {
+if(window.location.href.includes('bar')) {
     var scene = document.getElementById("scene");
     var parallaxInstance = new Parallax(scene);
 }
