@@ -7,6 +7,7 @@
   font-family: "Baloo";
   src: url(css/BalooBhai-Regular.ttf);
 }
+
 .home-page {
   background: radial-gradient(50% 50% at 50% 50%, #efcab0 0%, #b47759 100%);
   width: 100%;
@@ -20,8 +21,6 @@ main {
 main section:first-child {
   position: relative;
   width: 100vw;
-  /* z-index: -1; */
-  /* height: 98vh; */
 }
 
 main section:first-child img:first-child {
@@ -29,10 +28,15 @@ main section:first-child img:first-child {
   z-index: 2;
   height: auto;
   position: relative;
-  /* pointer-events: none; */
+  pointer-events: none;
 }
 
 main section:first-child img:last-child {
+  width: 100%;
+  height: auto;
+}
+
+a {
   position: absolute;
   top: 28%;
   left: 32%;
